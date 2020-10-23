@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    app:startDestination="@id/movieDetailFragment">
 
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.codepb.moviewviewer.ui.fragment.MovieDetailFragment"
+        android:label="MovieDetailFragment" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_seatReservationFragment"
+            app:destination="@id/seatReservationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seatReservationFragment"
+        android:name="com.codepb.moviewviewer.ui.fragment.SeatReservationFragment"
+        android:label="SeatReservationFragment" >
+        <action
+            android:id="@+id/action_seatReservationFragment_to_dateSelectionFragment"
+            app:destination="@id/dateSelectionFragment" />
+        <action
+            android:id="@+id/action_seatReservationFragment_to_cinemaSelectionFragment"
+            app:destination="@id/cinemaSelectionFragment" />
+        <action
+            android:id="@+id/action_seatReservationFragment_to_timeSelectionFragment"
+            app:destination="@id/timeSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateSelectionFragment"
+        android:name="com.codepb.moviewviewer.ui.fragment.DateSelectionFragment"
+        android:label="DateSelectionFragment" >
+        <action
+            android:id="@+id/action_dateSelectionFragment_to_seatReservationFragment"
+            app:destination="@id/seatReservationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cinemaSelectionFragment"
+        android:name="com.codepb.moviewviewer.ui.fragment.CinemaSelectionFragment"
+        android:label="CinemaSelectionFragment" >
+        <action
+            android:id="@+id/action_cinemaSelectionFragment_to_seatReservationFragment"
+            app:destination="@id/seatReservationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeSelectionFragment"
+        android:name="com.codepb.moviewviewer.ui.fragment.TimeSelectionFragment"
+        android:label="TimeSelectionFragment" >
+        <action
+            android:id="@+id/action_timeSelectionFragment_to_seatReservationFragment"
+            app:destination="@id/seatReservationFragment" />
+    </fragment>
 </navigation>

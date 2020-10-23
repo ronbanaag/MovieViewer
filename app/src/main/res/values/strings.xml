@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Movie Viewer</string>
+
+    <!-- Labels -->
+    <string name="label_movie_name">Name: </string>
+    <string name="label_movie_genre">Genre: </string>
+    <string name="label_movie_advisory_rating">Advisory Rating: </string>
+    <string name="label_movie_duration">Duration: </string>
+    <string name="label_movie_release_date">Name: </string>
+    <string name="label_movie_synopsis">Name: </string>
+
+    <string name="label_reservation_theater">Name: </string>
+    <string name="label_reservation_cinema">Name: </string>
+    <string name="label_reservation_time">Name: </string>
+    <string name="label_reservation_selected_seat">Name: </string>
+    <string name="label_reservation_total_price">Name: </string>
+
+    <!-- Buttons -->
+    <string name="btn_view_seat_map">View Seat Map</string>
 </resources>
