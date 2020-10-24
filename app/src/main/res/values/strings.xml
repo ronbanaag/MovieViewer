@@ -2,19 +2,44 @@
     <string name="app_name">Movie Viewer</string>
 
     <!-- Labels -->
-    <string name="label_movie_name">Name: </string>
-    <string name="label_movie_genre">Genre: </string>
-    <string name="label_movie_advisory_rating">Advisory Rating: </string>
-    <string name="label_movie_duration">Duration: </string>
-    <string name="label_movie_release_date">Name: </string>
-    <string name="label_movie_synopsis">Name: </string>
+    <string name="label_loading">Loading…</string>
 
-    <string name="label_reservation_theater">Name: </string>
-    <string name="label_reservation_cinema">Name: </string>
-    <string name="label_reservation_time">Name: </string>
-    <string name="label_reservation_selected_seat">Name: </string>
-    <string name="label_reservation_total_price">Name: </string>
+    <string name="label_movie_name">Name:</string>
+    <string name="label_movie_genre">Genre:</string>
+    <string name="label_movie_advisory_rating">Advisory Rating:</string>
+    <string name="label_movie_duration">Duration:</string>
+    <string name="label_movie_release_date">Release Date:</string>
+    <string name="label_movie_synopsis">Synopsis:</string>
+    <string name="label_search">Search:</string>
+
+    <string name="label_reservation_legend_available">Available</string>
+    <string name="label_reservation_legend_reserved">Reserved</string>
+    <string name="label_reservation_legend_selected">Selected</string>
+    <string name="label_reservation_theater">Theater</string>
+    <string name="label_reservation_date">Date</string>
+    <string name="label_reservation_cinema">Cinema</string>
+    <string name="label_reservation_time">Time</string>
+    <string name="label_reservation_movie_screen">Movie Screen</string>
+    <string name="label_reservation_selected_seat">Your selected seats:</string>
+    <string name="label_reservation_total_price">Total</string>
+
+    <string name="label_selection_date">Select Date</string>
+    <string name="label_selection_cinema">Select Cinema</string>
+    <string name="label_selection_time">Select Time</string>
 
     <!-- Buttons -->
     <string name="btn_view_seat_map">View Seat Map</string>
+    <string name="btn_reserve_seat">Reserve Seat/s</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_movie_poster">Movie Poster</string>
+    <string name="cd_seating_available">Gray</string>
+    <string name="cd_seating_reserved">Blue</string>
+    <string name="cd_movie_selected">Red</string>
+    <string name="cd_search_button">Search button</string>
+
+    <string name="lorem_ipsum_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt nibh eu quam accumsan, aliquam hendrerit felis lacinia. In hac habitasse platea dictumst. Donec eleifend est nec nulla ullamcorper, eget venenatis dui vestibulum. Donec egestas ipsum ut orci varius, at dictum est elementum. Cras eget consequat tortor. Maecenas ullamcorper quam eget ultrices tincidunt. Curabitur quis ante rutrum, dignissim lorem a, pellentesque neque. Nam id viverra orci. Mauris aliquam, est quis ultrices commodo, quam neque viverra est, vitae volutpat velit dui et arcu.
+        Vivamus porta mattis semper. Vivamus mattis, turpis at consequat accumsan, augue libero finibus massa, tincidunt luctus erat enim a libero. Nullam ornare placerat lacus, et interdum lacus efficitur ac. Morbi molestie pharetra elit vitae ornare. Aliquam erat volutpat. Nam porta nisl eleifend pharetra semper. Donec nec semper erat. Pellentesque maximus eros lorem. Nulla ornare, justo sed feugiat facilisis, tortor turpis maximus tortor, ut mollis nibh dolor id urna. Integer hendrerit elit leo, scelerisque facilisis dui venenatis vestibulum. Pellentesque leo ex, tristique id ex vel, tempus commodo orci. Praesent vel lorem ac felis fermentum malesuada ut nec tortor. Donec vitae dictum eros. Morbi sollicitudin ultrices lectus, id luctus eros ullamcorper quis.
+        Integer ut cursus tellus, vel elementum tellus. In iaculis ante non elit ultricies, vitae accumsan neque lacinia. Nulla venenatis sed tortor porttitor elementum. Suspendisse eget tempus neque, eu accumsan augue. Morbi sed dictum neque. Nunc pellentesque vitae ipsum eu volutpat. Integer placerat maximus nisl, et tempor massa pulvinar et. Suspendisse potenti.
+    </string>
 </resources>
