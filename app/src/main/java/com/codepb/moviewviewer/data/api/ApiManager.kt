@@ -1,6 +1,9 @@
 package com.codepb.moviewviewer.data.api
 
 import com.codepb.moviewviewer.data.model.MovieDetails
+import com.codepb.moviewviewer.data.model.Seatmap
+import com.codepb.moviewviewer.data.model.ViewingSchedule
+import com.codepb.moviewviewer.data.model.ViewingTime
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -27,9 +30,7 @@ class ApiManager {
         call.subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : Observer<Response<MovieDetails>>{
-                override fun onComplete() {
-
-                }
+                override fun onComplete() {}
 
                 override fun onSubscribe(d: Disposable) {
                     mCompositeDisposable.add(d)
@@ -38,6 +39,56 @@ class ApiManager {
                 override fun onNext(it: Response<MovieDetails>) {
                     if(it.code() == 200) {
                         next(it.body())
+                    }
+                }
+
+                override fun onError(e: Throwable) {
+                    error(e)
+                }
+            })
+    }
+
+    fun getViewingTime(next: (data: ViewingSchedule?) -> Unit, error: (e: Throwable) -> Unit){
+        val call = apiService.getViewingTime()
+        call.subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(object : Observer<Response<ViewingSchedule>>{
+                override fun onComplete() {}
+
+                override fun onSubscribe(d: Disposable) {
+                    mCompositeDisposable.add(d)
+                }
+
+                override fun onNext(it: Response<ViewingSchedule>) {
+                    if(it.code() == 200) {
+                        if(it.body() != null) {
+                            next(it.body())
+                        }
+                    }
+                }
+
+                override fun onError(e: Throwable) {
+                    error(e)
+                }
+            })
+    }
+
+    fun getSeatmap(next: (data: Seatmap?) -> Unit, error: (e: Throwable) -> Unit){
+        val call = apiService.getSeatMap()
+        call.subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(object : Observer<Response<Seatmap>>{
+                override fun onComplete() {}
+
+                override fun onSubscribe(d: Disposable) {
+                    mCompositeDisposable.add(d)
+                }
+
+                override fun onNext(it: Response<Seatmap>) {
+                    if(it.code() == 200) {
+                        if(it.body() != null) {
+                            next(it.body()!!)
+                        }
                     }
                 }
 

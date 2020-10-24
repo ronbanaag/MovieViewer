@@ -35,7 +35,7 @@ class MovieDetailFragment: BaseFragment() {
         initListeners()
 
         movieDetailViewModel.getMovieDetails()
-//        MainActivity.mainActivityReference?.showLoading()
+        MainActivity.mainActivityReference?.showLoading()
     }
 
     private fun initViews(){
@@ -58,7 +58,7 @@ class MovieDetailFragment: BaseFragment() {
                 Glide.with(this).load(it.poster).into(iv_vertical_poster)
                 Glide.with(this).load(it.posterLandscape).into(iv_horizontal_poster)
 
-//                MainActivity.mainActivityReference?.hideLoading()
+                MainActivity.mainActivityReference?.hideLoading()
             })
         }
     }

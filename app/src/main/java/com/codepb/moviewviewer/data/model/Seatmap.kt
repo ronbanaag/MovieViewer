@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class Seatmap (
     val seatmap: List<List<String>?>?,
-    val available: AvailableSeats
+    val available: AvailableSeats?
 )
 
 data class AvailableSeats(

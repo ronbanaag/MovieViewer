@@ -1,6 +1,9 @@
 package com.codepb.moviewviewer.data.api
 
 import com.codepb.moviewviewer.data.model.MovieDetails
+import com.codepb.moviewviewer.data.model.Seatmap
+import com.codepb.moviewviewer.data.model.ViewingSchedule
+import com.codepb.moviewviewer.data.model.ViewingTime
 import io.reactivex.Observable
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -16,6 +19,12 @@ interface ApiService {
 
     @GET("movie.json")
     fun getMovieDetails(): Observable<Response<MovieDetails>>
+
+    @GET("schedule.json")
+    fun getViewingTime(): Observable<Response<ViewingSchedule>>
+
+    @GET("seatmap.json")
+    fun getSeatMap(): Observable<Response<Seatmap>>
 
     companion object Factory {
 
