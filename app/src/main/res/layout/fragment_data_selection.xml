@@ -13,6 +13,7 @@
         android:padding="8dp"
         android:gravity="center_vertical"
         android:weightSum="100"
+        android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView

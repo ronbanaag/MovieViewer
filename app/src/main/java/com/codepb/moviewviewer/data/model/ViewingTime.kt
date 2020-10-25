@@ -1,12 +1,15 @@
 package com.codepb.moviewviewer.data.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 data class ViewingTime(
     val parent: String,
-    val times: Times
+    val times: List<Times>?
 )
 
+@Parcelize
 data class Times (
     val id: String,
     val label: String?,
@@ -20,4 +23,4 @@ data class Times (
     val seatingType: String,
     val price: String,
     val variant: String
-)
+): Parcelable

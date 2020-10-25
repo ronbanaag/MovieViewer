@@ -3,6 +3,7 @@
 
     <!-- Labels -->
     <string name="label_loading">Loading…</string>
+    <string name="label_none">None</string>
 
     <string name="label_movie_name">Name:</string>
     <string name="label_movie_genre">Genre:</string>
@@ -30,6 +31,17 @@
     <!-- Buttons -->
     <string name="btn_view_seat_map">View Seat Map</string>
     <string name="btn_reserve_seat">Reserve Seat/s</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_schedule_details">Schedule Details</string>
+    <string name="dialog_message_confirm_select_schedule_details">Please select date, cinema, and time.</string>
+    <string name="dialog_message_confirm_select_date">Please select date.</string>
+    <string name="dialog_message_confirm_select_cinemda">Please select cinema.</string>
+    <string name="dialog_message_confirm_select_time">Please select time.</string>
+    <string name="dialog_title_seat_reservation">Seat Reservation</string>
+    <string name="dialog_message_confirm_reservation">Would you like to reserve this seat?</string>
+    <string name="dialog_message_cancel_reservation">Would you like to cancel reservation for this seat?</string>
+    <string name="dialog_message_seat_not_available">This seat is already reserved.</string>
 
     <!-- Content Descriptions -->
     <string name="cd_movie_poster">Movie Poster</string>

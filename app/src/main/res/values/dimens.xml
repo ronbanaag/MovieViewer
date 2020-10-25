@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="seat_image_margin_end_small">2dp</dimen>
+    <dimen name="seat_image_margin_bottom_small">4dp</dimen>
+    <dimen name="seat_image_height_small">15dp</dimen>
+    <dimen name="seat_image_width_small">15dp</dimen>
+
+    <dimen name="seat_image_margin_end_zoomed">6dp</dimen>
+    <dimen name="seat_image_margin_bottom_zoomed">8dp</dimen>
+    <dimen name="seat_image_height_zoomed">35dp</dimen>
+    <dimen name="seat_image_width_zoomed">35dp</dimen>
+
+    <dimen name="font_size_seating_small">4sp</dimen>
+    <dimen name="font_size_seating_zoomed">10sp</dimen>
 
     <dimen name="font_size_small">14sp</dimen>
     <dimen name="font_size_medium">18sp</dimen>

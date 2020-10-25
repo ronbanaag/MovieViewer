@@ -3,18 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
-    android:paddingStart="12dp"
-    android:paddingEnd="12dp"
-    android:background="@color/colorBtnRed"
-    android:layout_marginEnd="4dp">
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:background="@color/colorBtnRedDark"
+    android:layout_marginEnd="6dp">
 
     <TextView
+        android:id="@+id/tv_selected_seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A1"
         android:textColor="@color/colorWhite"
-        android:textSize="@dimen/font_size_medium"/>
+        android:textSize="@dimen/font_size_small"/>
 
 </LinearLayout>
